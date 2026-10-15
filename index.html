@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" id="NAVE">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#" style="color: #ffffff; font-size: 30px; font-weight: 500; margin: 0; text-transform: uppercase;">
+      Arsha.
+    </a>
+
+    <!-- Toggle Button for Mobile -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarlist">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" >About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" >Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+
+        <!-- Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+
+      <!-- CTA Button -->
+    </div>
+    <button type="button" class="btn btn-primary btn-lg" id="button-1">Get started</button>
+  </div>
+  <div class="menu-icon" id="menuIcon"><i class="bi bi-list"></i></div>
+</nav>
+  </header>
+  <main>
+    <section class="banner">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="max-width: 1000px; height: 100vh; background-color: #444444;">
+    <div class="modal-content" style="background: none; border: none;">
+      <!-- Close Button -->
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        
+      </button>
+
+      <!-- Modal Body with YouTube Video -->
+      <div class="modal-body">
+        <iframe style="width: 100%; height: 500px;" 
+          src="https://www.youtube.com/embed/Y7f98aduVJ8?si=d7E2KYDHpeaEOEL5" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Banner Section -->
+<div style="background-color: #37517e; padding: 100px 0 80px 0;" class="pt-5 pb-4">
+  <div class="container px-sm-4 px-lg-6">
+    <div id="baner">
+      <div class="row">
+        <!-- Left Column: Text and Buttons -->
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+          <div style="margin-top: 100px;" class="mt-lg-5">
+            <h1 style="color: #ffffff; font-size: 45px; font-weight: 700; line-height: 56px; margin: 0;" class="fw-bold display-5 lh-sm mb-3">
+              Better Solutions For Your Business
+            </h1>
+            <p style="color: #ffffff7e; font-size: 20px; font-weight: 400; margin: 5px 0 30px 0;" class="text-white-50 fs-5 mb-4">
+              We are team of talented designers making websites with Bootstrap
+            </p>
+
+            <!-- Buttons Section -->
+            <div style="display: flex; align-items: center; position: relative;">
+              <button type="button" class="btn btn-primary btn-lg" id="button-1">Get started</button>
+
+              <div id="a" style="margin-left: 20px;">
+                <a href="#" data-toggle="modal" data-target="#exampleModal" class="glightbox btn-watch-video d-flex align-items-center">
+                  <i class="bi bi-play-circle" style="color: #ffffff; font-size: 32px; margin-right: 8px;"></i>
+                  <span style="color: #ffffff;">Watch Video</span>
+                </a>
+              </div>
+            </div>
+
+           
+            <a href="https://www.youtube.com/watch?v=UN719gI2lZI&t=3s">
+              
+            </a>
+          </div>
+        </div>
+
+        <div  class="col-12 col-lg-6">
+          <img src="./IMG/hero-img.png" width="100%" alt="Hero Image" class="img-fluid move-up-continuous">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="Clients">
+  <div class="container px-sm-4 px-lg-6 py-4">
+    <div class="row">
+      <div class="col-12">
+        <div id="imgs" class="d-flex justify-content-between align-items-center flex-wrap">
+          <img src="./IMG/client-1.png" alt="Client 1" class="img-fluid" style="max-height: 50px;">
+          <img src="./IMG/client-2.png" alt="Client 2" class="img-fluid" style="max-height: 50px;">
+          <img src="./IMG/client-3.png" alt="Client 3" class="img-fluid" style="max-height: 50px;">
+          <img src="./IMG/client-4.png" alt="Client 4" class="img-fluid" style="max-height: 50px;">
+          <img src="./IMG/client-6.png" alt="Client 5" class="img-fluid" style="max-height: 50px;">
+          <img src="./IMG/client-7.png" alt="Client 6" class="img-fluid" style="max-height: 50px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="About" style="padding: 60px 0;"class="py-5">
+  <div class="container px-sm-4 px-lg-6">
+    <!-- Section Title -->
+    <h2 id="title" style="text-align: center; font-size: 32px; margin-bottom: 15px; text-transform: uppercase; color: #37517e;">
+      About Us
+    </h2>
+
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <p class="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-start mb-2">
+            <i class="bi bi-check2-circle" style="color: #47b2e4; margin-right: 8px;"></i>
+            <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+          </li>
+          <li class="d-flex align-items-start mb-2">
+            <i class="bi bi-check2-circle" style="color: #47b2e4; margin-right: 8px;"></i>
+            <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+          </li>
+          <li class="d-flex align-items-start mb-2">
+            <i class="bi bi-check2-circle" style="color: #47b2e4; margin-right: 8px;"></i>
+            <span>Ullamco laboris nisi ut aliquip ex ea commodo.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-12 col-md-6">
+        <div id="About2">
+          <p class="mb-4">
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a href="#" class="read-more"font-weight: 500; display: inline-flex; align-items: center;">
+            Read More<i class="bi bi-arrow-right" style="margin-left: 5px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background-color: #f5f6f8; padding: 60px 0;" class="sec-faq">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Column (Text + Accordion) -->
+      <div class="col-lg-7">
+        <div style="padding-right: 50px;">
+          <h3 style="font-size: 32px; font-weight: 400; color: #37517e;">
+            Eum ipsam laborum deleniti 
+            <strong style="display: block; font-size: 30px; color: #37517e;">velit pariatur architecto aut nihil</strong>
+          </h3>
+          <p style="color: #37517e; font-size: 16px; margin-bottom: 30px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit.
+          </p>
+
+          <!-- Accordion -->
+          <div class="accordion" id="accordionExample">
+            
+            <!-- Accordion Item 1 -->
+            <div class="card mb-2" id="card-faq">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span style="color: #47b2e4; margin-right: 8px;">01</span>
+                    Non consectetur a erat nam at lectus urna duis?
+                    <i class="faq-toggle bi bi-chevron-right" style="position: absolute; right: 20px;"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna port.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="card mb-2" id="card-faq">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <span style="color: #47b2e4; margin-right: 8px;">02</span>
+                    Feugiat scelerisque varius morbi enim nunc faucibus?
+                    <i class="faq-toggle bi bi-chevron-right" style="position: absolute; right: 20px;"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="card" id="card-faq">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <span style="color: #47b2e4; margin-right: 8px;">03</span>
+                    Dolor sit amet consectetur adipiscing elit pellentesque?
+                    <i class="faq-toggle bi bi-chevron-right" style="position: absolute; right: 20px;"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column (Image) -->
+      <div class="col-lg-5">
+        <img src="./IMG/why-us.png" alt="Why Us Image" class="img-fluid" style="padding-top: 40px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="degree">
+  <div>
+ <div class="container px-sm-4 px-lg-6 py-5">
+   <div class="row align-items-center">
+     <div class="col-12 col-md-6 mb-4 mb-md-0">
+       <img src="./IMG/skills.png" width="100%" style="padding-top: 55px;" alt="">
+
+     </div>
+     <div class="col-12 col-md-6">
+       <h3 style="font-size: 1.9rem; font-weight: 700; color: #37517e; padding-top: 50px; " class="fw-bold mb-3" >Voluptatem dignissimos provident quasi corporis voluptas</h3>
+       <p style="color: #444444;"class="text-secondary mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       <div class="progress">
+         <div>
+          <span class="skill"><span> HTML</span> <i class="val" style="float: right;">100%</i></span>
+        </div>
+
+         <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+       <div class="progress mb-3">
+         <span class="skill"><span>CSS</span> <i class="val" style="float: right;">90%</i></span>
+         <div style="background-color: #e9ecef;"><div class="progress-bar" role="progressbar" style="width: 90%"  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+
+       </div>
+       <div class="progress">
+         <span class="skill"><span>JavaScript</span> <i class="val" style="float: right;">75%</i></span>
+         <div style="background-color: #e9ecef;"><div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ></div></div>
+
+       </div>
+       <div class="progress">
+         <span class="skill"><span>Photoshop</span> <i class="val" style="float: right;">55%</i></span>
+         <div style="background-color: #e9ecef;"><div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div></div>
+
+       </div>
+      
+   
+
+     </div>
+
+   </div>
+
+ </div>
+</div>
+
+</section>
+<section class="cards-top">
+  <div style="background-color: #f5f6f8; padding-top: 30px; padding-bottom: 40px;">
+  <div class="container">
+    
+    <!-- Section Title -->
+    <h2 id="title2" style="text-align: center; font-size: 32px; font-weight: 700; text-transform: uppercase; color: #37517e;">
+      Services
+    </h2>
+    <p style="text-align: center; color: #37517e; padding-top: 10px; padding-bottom: 15px;">
+      Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+    </p>
+
+    <!-- Services Grid -->
+    <div class="row">
+
+      <!-- Service 1 -->
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div id="card">
+          <div class="mb-3"><i class="bi bi-activity icon"></i></div>
+          <h4><a href="#" class="stretched-link">Sed ut perspici</a></h4>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div id="card">
+          <div class="mb-3"><i class="bi bi-bounding-box-circles icon"></i></div>
+          <h4><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div id="card">
+          <div class="mb-3"><i class="bi bi-calendar4-week icon"></i></div>
+          <h4><a href="#" class="stretched-link">Sed ut perspici</a></h4>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div id="card">
+          <div class="mb-3"><i class="bi bi-broadcast icon"></i></div>
+          <h4><a href="#" class="stretched-link">Magni Dolores</a></h4>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+<section class="call-action">
+  <div  class="container px-sm-4 px-lg-6 py-5">
+    <div class="row align-items-center">
+      
+      <!-- Text Content -->
+      <div class="col-12 col-lg-9 mb-4 mb-lg-0">
+        <h3 style="font-size: 28px; color: #ffffff; font-weight: 700; padding-top: 100px;" class="fw-bold display-6 mb-3">
+          Call To Action
+        </h3>
+        <p style="color: #ffffff; padding-bottom: 100px;" class="mb-0">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <!-- Call To Action Button -->
+      <div class="col-12 col-lg-3 text-center">
+        <button type="button" class="btn btn-primary btn-lg" id="button-3">
+          Call To Action
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="team">
+  <div style="margin-top: 40px;">
+ <h2 id="title4" style="text-align: center; font-size: 32px; font-weight: 700; text-transform: uppercase; color: #37517e; margin-bottom: 20px;">
+   Team
+ </h2>
+ <p style="text-align: center; color: #37517e; padding-top: 6px; padding-bottom: 15px;">
+   Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+ </p>
+
+ <div class="container">
+   <div class="row">
+     
+     <!-- Member 1 -->
+     <div class="col-12 col-md-6 mb-4">
+       <div id="card5" style="display: flex;">
+         <div class="pic">
+           <img src="./IMG/team-1.jpg" style="width: 100%; height: auto; border-radius: 50%;" alt="">
+         </div>
+         <div style="padding-left: 25px;">
+           <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 5px; color: #37517e;">Walter White</h4>
+           <p style="font-size: 15px; font-weight: 500;">Chief Executive Officer</p>
+           <hr style="width: 50px; height: 2px; margin-left: 0;">
+           <p style="font-size: 14px;">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+           <div class="social">
+             <a href=""><i class="bi bi-twitter-x"></i></a>
+             <a href=""><i class="bi bi-facebook"></i></a>
+             <a href=""><i class="bi bi-instagram"></i></a>
+             <a href=""><i class="bi bi-linkedin"></i></a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- Member 2 -->
+     <div class="col-12 col-md-6 mb-4">
+       <div id="card5" style="display: flex;">
+         <div class="pic">
+           <img src="./IMG/team-2.jpg" style="width: 100%; height: auto; border-radius: 50%;" alt="">
+         </div>
+         <div style="padding-left: 25px;">
+           <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 5px; color: #37517e;">Sarah Jhonson</h4>
+           <p style="font-size: 15px; font-weight: 500;">Product Manager</p>
+           <hr style="width: 50px; height: 2px; margin-left: 0;">
+           <p style="font-size: 14px;">Aut maiores voluptates amet et quis praesentium qui senda para</p>
+           <div class="social">
+             <a href=""><i class="bi bi-twitter-x"></i></a>
+             <a href=""><i class="bi bi-facebook"></i></a>
+             <a href=""><i class="bi bi-instagram"></i></a>
+             <a href=""><i class="bi bi-linkedin"></i></a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- Member 3 -->
+     <div class="col-12 col-md-6 mb-4">
+       <div id="card5" style="display: flex;">
+         <div class="pic">
+           <img src="./IMG/team-4.jpg" style="width: 100%; height: auto; border-radius: 50%;" alt="">
+         </div>
+         <div style="padding-left: 25px;">
+           <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 5px; color: #37517e;">Amanda Jepson</h4>
+           <p style="font-size: 15px; font-weight: 500;">Accountant</p>
+           <hr style="width: 50px; height: 2px; margin-left: 0;">
+           <p style="font-size: 14px;">Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+           <div class="social">
+             <a href=""><i class="bi bi-twitter-x"></i></a>
+             <a href=""><i class="bi bi-facebook"></i></a>
+             <a href=""><i class="bi bi-instagram"></i></a>
+             <a href=""><i class="bi bi-linkedin"></i></a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- Member 4 -->
+           <div class="col-12 col-md-6 mb-4">
+       <div id="card5" style="display: flex;">
+         <div class="pic">
+           <img src="./IMG/team-2.jpg" style="width: 100%; height: auto; border-radius: 50%;" alt="">
+         </div>
+         <div style="padding-left: 25px;">
+           <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 5px; color: #37517e;">Sarah Jhonson</h4>
+           <p style="font-size: 15px; font-weight: 500;">Product Manager</p>
+           <hr style="width: 50px; height: 2px; margin-left: 0;">
+           <p style="font-size: 14px;">Aut maiores voluptates amet et quis praesentium qui senda para</p>
+           <div class="social">
+             <a href=""><i class="bi bi-twitter-x"></i></a>
+             <a href=""><i class="bi bi-facebook"></i></a>
+             <a href=""><i class="bi bi-instagram"></i></a>
+             <a href=""><i class="bi bi-linkedin"></i></a>
+           </div>
+         </div>
+       </div>
+     </div>
+      
+
+   </div>
+ </div>
+</div>
+</section>
+<section class="Pricing">
+  <div style="margin-top: 30px; background-color: #f5f6f8; padding-bottom: 30px;">
+  <h2 id="title4" style="text-align: center; font-size: 32px; font-weight: 700; text-transform: uppercase; color: #37517e; margin-bottom: 20px;">
+    Pricing
+  </h2>
+  <p style="text-align: center; color: #37517e; padding-top: 6px; padding-bottom: 15px;">
+    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+  </p>
+
+  <div class="container">
+    <div class="row">
+      
+      <!-- Free Plan -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div id="card-0">
+          <h3 style="font-size: 20px; color: #37517e;">Free Plan</h3>
+          <h4 style="font-size: 48px; color: #47b2e4; font-weight: 400;">
+            <sup>$</sup>0<span style="font-size: 16px; color: #4444446c;"> / month</span>
+          </h4>
+          <div id="A1">
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+              <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+              <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+              <li class="na"><i class="bi bi-x"></i> <span style="text-decoration: line-through; color: #4444447e;">Pharetra massa massa ultricies</span></li>
+              <li class="na"><i class="bi bi-x"></i> <span style="text-decoration: line-through; color: #4444446c;">Massa ultricies mi quis hendrerit</span></li>
+            </ul>
+          </div>
+          <a href=""><button id="btn3">Buy Now</button></a>
+        </div>
+      </div>
+
+      <!-- Business Plan -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div id="card-0">
+          <h3 style="font-size: 20px; color: #37517e;">Business Plan</h3>
+          <h4 style="font-size: 48px; color: #47b2e4; font-weight: 400;">
+            <sup>$</sup>29<span style="font-size: 16px; color: #4444446c;"> / month</span>
+          </h4>
+          <div id="A1">
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+              <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+              <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+              <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+              <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+            </ul>
+          </div>
+          <a href=""><button id="btn3">Buy Now</button></a>
+        </div>
+      </div>
+
+      <!-- Developer Plan -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div id="card-0">
+          <h3 style="font-size: 20px; color: #37517e;">Developer Plan</h3>
+          <h4 style="font-size: 48px; color: #47b2e4; font-weight: 400;">
+            <sup>$</sup>49<span style="font-size: 16px; color: #4444446c;"> / month</span>
+          </h4>
+          <div id="A1">
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+              <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+              <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+              <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+              <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+            </ul>
+          </div>
+          <a href=""><button id="btn3">Buy Now</button></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+<section class="Testimonials">
+  <div style="background-color: #ffffff; padding-bottom: 50px; padding-top: 25px;">
+  <h2 id="title4" style="text-align: center; font-size: 32px; font-weight: 700; text-transform: uppercase; color: #37517e; margin-bottom: 20px;">
+    Testimonials
+  </h2>
+  <p style="text-align: center;">
+    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+  </p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active text-center">
+              <img src="./IMG/testimonials-1.jpg" width="90px" alt="">
+              <h3>John Larson</h3>
+              <p>Designer</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <div style="padding: 0 100px;">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right" style="color: #47b2e4;"></i>
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item text-center">
+              <img src="./IMG/testimonials-2.jpg" width="90px" alt="">
+              <h3>Sara Wilsson</h3>
+              <p>Store owner</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <div style="padding: 0 100px;">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item text-center">
+              <img src="./IMG/testimonials-3.jpg" width="90px" alt="">
+              <h3>Jana Kalris</h3>
+              <p>Entrepreneur</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <div style="padding: 0 100px;">
+                <p>
+                  <i class="bi bi-quote quote-icon-left" style="color: #47b2e4;"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right" style="color: #47b2e4;"></i>
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item text-center">
+              <img src="./IMG/testimonials-4.jpg" width="90px" alt="">
+              <h3>Matt Brandon</h3>
+              <p>Freelancer</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <div style="padding: 0 100px;">
+                <p>
+                  <i class="bi bi-quote quote-icon-left" style="color: #47b2e4;"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right" style="color: #47b2e4;"></i>
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-item text-center">
+              <img src="./IMG/testimonials-5.jpg" width="90px" alt="">
+              <h3>Matt Brandon</h3>
+              <p>Freelancer</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <div style="padding: 0 100px;">
+                <p>
+                  <i class="bi bi-quote quote-icon-left" style="color: #47b2e4;"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right" style="color: #47b2e4;"></i>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="Questions">
+    <div style="background-color: #f5f6f8;">
+              <h2 style="font-size: 32px; font-weight: 700; color: #37517e; text-align: center; padding-top: 40px;" id="title4">Frequently Asked Questions</h2>
+              <p style="text-align: center; color: #37517e; padding: 10px 80px 10px 80px;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div style="padding: 15px 100px 15px 100px;" class="sm-4 px-lg-6 py-3">
+                      <div class="accordion" id="accordionExample">
+                        <div class="card" id="card-faq">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span style="margin-right: 4px; color: #47b2e4;"><i class="faq-icon bi bi-question-circle"></i></span>
+                                Non consectetur a erat nam at lectus urna duis? <i class="faq-toggle bi bi-chevron-right" style="position: absolute; right: 0;"></i>
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna port
+        
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card" id="card-faq">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span style="margin-right: 4px; color: #47b2e4;"><i class="faq-icon bi bi-question-circle"></i></span>
+                                Non consectetur a erat nam at lectus urna duis? <i class="faq-toggle bi bi-chevron-right" style="position: absolute; right: 0;"></i>
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna port
+        
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card" id="card-faq">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span style="margin-right: 4px; color: #47b2e4;"><i class="faq-icon bi bi-question-circle"></i></span>
+                                Non consectetur a erat nam at lectus urna duis? <i class="faq-toggle bi bi-chevron-right" style="position: absolute; right: 0;"></i>
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna port
+        
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card" id="card-faq">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">   
+                                  <span style="color: #47b2e4; margin-right: 4px;"><i class="faq-icon bi bi-question-circle"></i></span>
+                                  Feugiat scelerisque varius morbi enim nunc faucibus?  <i class="faq-toggle bi bi-chevron-right" style="position: absolute; right: 0;"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card" id="card-faq" >
+                          <div class="card-header" id="headingOne" >
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span style="color: #47b2e4; margin-right: 4px;"><i class="faq-icon bi bi-question-circle"></i></span>
+                                Dolor sit amet consectetur adipiscing elit pellentesque?  <i class="faq-toggle bi bi-chevron-right" style="position: absolute; right: 0;"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+    </div>
+</section>
+<section class="formation">
+   <div>
+        <div style="margin-bottom: 50px;">
+                <h2 style="font-size: 32px; font-weight: 700; color: #37517e; text-align: center; padding-top: 40px;" id="title4">Contact</h2>
+                <p style="color: #37517e; text-align: center;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+              </div>
+              <div class="container px-sm-4 px-lg-6 form-cont">
+                <div class="row">
+                  <div class="col-12 col-lg-5 mb-4">
+                    <div id="map">
+                      <div id="m2" style="padding-bottom: 10px; " class="mb-3">
+                        <div style="display: flex; padding-bottom: 15px;" class="d-flex mb-3">
+                          <i class="bi bi-geo-alt flex-shrink-0"></i>
+                          <div style="margin-left: 10px;" class="ms-3">
+                            <h3 style="font-size: 18px;font-weight: 700; color: #37517e;">Address</h3>
+                            <p style="font-size: 14px;" class="mb-0">A108 Adam Street, New York, NY 535022 </p>
+                          </div>
+                        </div>
+                        <div style="display: flex; padding-bottom: 15px;" class="d-flex mb-3">
+                          <i class="bi bi-telephone flex-shrink-0"></i>
+                          <div style="margin-left: 10px;">
+                            <h3 style="font-size: 18px;font-weight: 700; color: #37517e;" >Call Us</h3>
+                            <p style="font-size: 14px;">+1 5589 55488 55</p>
+                          </div>
+                        </div>
+                        <div style="display: flex; padding-bottom: 15px;" class="d-flex">
+                          <i class="bi bi-envelope flex-shrink-0"></i>
+                          <div style="margin-left: 10px;" class="ms-3">
+                            <h3 style="font-size: 18px;font-weight: 700; color: #37517e;">Email Us</h3>
+                            <p style="font-size: 14px;" class="mb-0"> >info@example.com</p>
+                          </div>
+                        </div>
+                      </div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-7">
+                    <div id="form">
+                      <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+                          <div class="col-md-6">
+                            <label for="name-field">Your Name</label>
+                            <input type="text" name="name" id="name-field" class="form-control" required="">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="email-field">Your Email</label>
+                            <input type="email" class="form-control" name="email" id="email-field" required="">
+                          </div>
+                          <div class="col-md-12">
+                            <label for="subject-field">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                          </div>
+                          <div class="col-md-12">
+                            <label for="message-field">Message</label>
+                            <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <div class="error-message"></div>
+                            <button type="submit">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+   </div>
+</section>
+  </main>
+ <footer class="footer">
+        <div class="footer-container container px-sm-4 px-lg-6 py-5">
+          <div class="footer-column col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <h4>ARSHA</h4>
+            <p>A108 Adam Street<br>New York, NY 535022</p>
+            <p><strong>Phone:</strong> +1 5589 55488 55</p>
+            <p><strong>Email:</strong> info@example.com</p>
+          </div>
+    
+          <div class="footer-column col-6 col-lg-2 mb-4 mb-lg-0">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-column col-6 col-lg-2 mb-4 mb-lg-0">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-column col-12 col-md-6 col-lg-5">
+            <h4>Follow Us</h4>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <div class="footer-social">
+              <a href="#" class=" me-3"><span><i class="bi bi-twitter-x"></i></span></a>
+              <a href="#" class=" me-3"><span><i class="bi bi-facebook"></i></span></a>
+              <a href="#" class=" me-3"><i class="bi bi-instagram"></i><span></span></a>
+              <a href="#" class=" me-3"><span><i class="bi bi-linkedin"></i></span></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          &copy; Copyright <strong>FlexStart</strong> All Rights Reserved<br>
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+  </footer>
+
+
+
+
+
+
+
+
+      
+      
+      
+           
+          
+        
+
+          
+    
+
+
+   
+   
+       
+  <script src="./js/main.js"></script>  
+    
+</body>
+</html>
